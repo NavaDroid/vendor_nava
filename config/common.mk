@@ -204,6 +204,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/nava/overlay/common \
 
 PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay \
     DocumentsUIOverlay \
     NetworkStackOverlay
 
