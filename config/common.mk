@@ -102,11 +102,7 @@ PRODUCT_PACKAGES += \
     product_charger_res_images \
     product_charger_res_images_vendor
 
-# Config
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
-
-# Extra tools in
+# Extra tools
 PRODUCT_PACKAGES += \
     bash \
     curl \
