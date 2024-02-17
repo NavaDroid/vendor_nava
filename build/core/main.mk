@@ -1,2 +1,2 @@
-# Include LineageOS versions
-include $(TOPDIR)vendor/lineage/build/core/main_version.mk
+# Include NavaDroid versions
+include $(TOPDIR)vendor/nava/build/core/main_version.mk
