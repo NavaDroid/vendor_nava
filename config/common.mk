@@ -250,3 +250,6 @@ include vendor/nava/config/version.mk
 $(call inherit-product, vendor/nava/config/ota.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
+
+# Pixel Framework
+$(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
