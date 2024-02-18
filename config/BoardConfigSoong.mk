@@ -49,7 +49,8 @@ SOONG_CONFIG_navaGlobalVars += \
     target_trust_usb_control_enable \
     target_trust_usb_control_disable \
     uses_egl_display_array \
-    uses_oplus_camera
+    uses_oplus_camera \
+    uses_nothing_camera
 
 SOONG_CONFIG_NAMESPACES += navaNvidiaVars
 SOONG_CONFIG_navaNvidiaVars += \
@@ -76,6 +77,7 @@ SOONG_CONFIG_navaGlobalVars_sdmcore_has_is_display_hw_available_func := $(TARGET
 SOONG_CONFIG_navaGlobalVars_gralloc_handle_has_ubwcp_format := $(TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT)
 SOONG_CONFIG_navaGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_navaGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
+SOONG_CONFIG_navaGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
 SOONG_CONFIG_navaNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_navaQcomVars_qti_vibrator_use_effect_stream := $(TARGET_QTI_VIBRATOR_USE_EFFECT_STREAM)
 SOONG_CONFIG_navaQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
