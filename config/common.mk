@@ -85,15 +85,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_PACKAGES += \
     build-manifest
 
-# NavaDroid packages
-ifeq ($(PRODUCT_IS_ATV),)
-PRODUCT_PACKAGES += \
-    Updater
-endif
-
-PRODUCT_COPY_FILES += \
-    vendor/nava/prebuilt/common/etc/init/init.nava-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
-
 # Config
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
@@ -193,5 +184,8 @@ CUSTOM_LOCALES += \
     fur_IT
 
 include vendor/nava/config/version.mk
+
+# OTA
+$(call inherit-product, vendor/nava/config/ota.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk

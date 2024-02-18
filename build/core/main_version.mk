@@ -11,3 +11,9 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.nava.version=$(NAVA_VERSION) \
     ro.nava.device=$(NAVA_BUILD) \
     ro.modversion=$(NAVA_VERSION)
+
+# Updater
+ifeq ($(IS_OFFICIAL),true)
+    ADDITIONAL_SYSTEM_PROPERTIES  += \
+        ro.is_official=true
+endif
